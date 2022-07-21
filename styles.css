@@ -1,0 +1,53 @@
+body{
+    background-image: url(https://b-iff.ro/wp-content/uploads/2021/04/Cum-sa-faceti-o-rezervare-la-restaurant.jpg) ;
+    font-family: Tahoma;
+    font-size: 17px;
+    color: white;
+    margin: 0;
+  }
+  h1, p{
+    margin: 0 auto;
+    margin-top: 1em;
+    text-align: center;
+  }
+  
+  fieldset {
+    text-align: center;
+    width: 400px;
+    margin: auto;
+    border: 50 50 50;
+    background-color: rgba(160, 100, 0, 89%);
+  }
+  label{
+    display: block;
+    margin: 0.5rem 0;
+    text-align: left;
+  }
+  input{
+    width: auto;
+    margin: 0, 5px, 0, 0;
+  }
+  input,
+  textarea,
+  select {
+    margin: 10px 0 0 0;
+      width: 100%;
+    min-height: 2em;
+  }
+  .inline {
+    width: unset;
+    margin: 0 0.5em 0 0;
+    vertical-align: middle;
+  }
+  input[type="submit"] {
+    display: block;
+    width: auto;
+    margin: 1em auto;
+    height: 3em;
+    font-size: 1.1rem;
+    background-color: burlywood;
+    border-color: black;
+    min-width: 300px;
+    font-family: Tahoma;
+  }
+  

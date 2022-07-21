@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Favorite food survey</title>
+    <link rel="stylesheet" href="styles.css"/>
+    </head>
+    <body>
+      <h1 id="title">Favorite food survey</h1>
+      <p id="description">Thank you for taking the time to review our culinary dishes.</p>
+      <form id="survey-form">
+        <fieldset>
+            <label id="name-label">Name <input placeholder="Enter your name" required id="name" type="text"/></label>
+            <label id="email-label">Email <input placeholder="Enter your Email" required id="email" type="email"/> </label>
+            <label id="number-label">Age(optional) <input min="14" max="99" placeholder="Age" id="number" type="number"/> </label>
+            <label>Which option best describes your food preferences?</label>
+        <select id="dropdown">
+              <option value="">(select one)
+                </option>
+                <option value="1">Pizzas
+                </option>
+                <option value="2">Tacos
+                </option>
+                <option value="3">Burgers
+                </option>
+                <option value="4">Shawarmas
+                </option>
+                <option value="5">All of the above
+                </option>
+                </select>
+          
+        
+<label>Would you recommend our food to a friend?</label>
+
+<label><input class="inline" id="best" name="best-worst-medium" type="radio" checked value="best" >Yes.Best food.</label>
+<label><input class="inline" id="worst" name="best-worst-medium" type="radio" value="worst" >No.Worst food.</label>
+<label><input class="inline" id="medium" name="best-worst-medium" type="radio" value="medium" >Not sure.Medium food.</label>
+
+<label>What is your favorite way of eating the food?
+<select id="dropdown">
+<option value="">(select one)</option>
+<option value="6">With my hands</option>
+<option value="7">With knives and forks</option>
+<option value="8">At the restaurant</option>
+<option value="9">All of the above</option>
+</select>
+</label>
+<label>What type of culinary dishes would you like to see in the future?</label>
+
+  <label><input class="inline" type="checkbox" name="culinary-dish" id="Pasta" value="Pasta"> Pasta</label>
+  <label><input class="inline" type="checkbox" name="culinary-dish" id="Lasagna" value="Lasagna"> Lasagna</label>
+  <label><input class="inline" type="checkbox" name="culinary-dish" id="Quesadilla" value="Quesadilla"> Quesadilla</label>
+  <label><input class="inline" type="checkbox" name="culinary-dish" id="Soup" value="Soup"> Soup</label>
+  <label><input class="inline" type="checkbox" name="culinary-dish" id="Oatmeal" value="Oatmeal"> Oatmeal</label>
+  <label><input class="inline" type="checkbox" name="culinary-dish" id="Biscuits" value="Biscuits"> Biscuits</label>
+  <label><input class="inline" type="checkbox" name="culinary-dish" id="Omlette" value="Omlette"> Omlette</label>
+  <label><input class="inline" type="checkbox" name="culinary-dish" id="Bruschetta" value="Bruschetta"> Bruschetta</label>
+  <label><input class="inline" type="checkbox" name="culinary-dish" id="Pancakes" value="Pancakes"> Pancakes</label>
+  <label><input class="inline" type="checkbox" name="culinary-dish" id="Bread" value="Bread"> Bread</label>
+  <label><input class="inline" type="checkbox" name="culinary-dish" id="French-fries" value="French-fries"> French-fries</label>
+  <label><label>Help us improve by writing your comments and suggestions!</label>
+  <textarea name="feedback" rows="10" cols="70" placeholder="I like spicy sauce..."></textarea>
+  </fieldset>
+<input type="submit" value="Submit" id="submit" />
+</form>
+      </body>
+  </html>
