@@ -5,15 +5,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Favorite food survey</title>
     <link rel="stylesheet" href="styles.css"/>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.1.2/css/all.css"/>
     </head>
     <body>
       <h1 id="title">Favorite food survey</h1>
       <p id="description">Thank you for taking the time to review our culinary dishes.</p>
-      <form id="survey-form">
-        <fieldset>
-            <label id="name-label">Name <input placeholder="Enter your name" required id="name" type="text"/></label>
-            <label id="email-label">Email <input placeholder="Enter your Email" required id="email" type="email"/> </label>
-            <label id="number-label">Age(optional) <input min="14" max="99" placeholder="Age" id="number" type="number"/> </label>
+
+      <form id="form" class="form">
+        
+          <div class="form-set">
+            <label for="username" id="nam-label">Name</label>
+            <input placeholder="Enter your name" id="username" type="text"/>
+            <i id="ss" class="fa-solid fa-circle-check"></i>
+            <i id="c" class="fa-solid fa-circle-exclamation"></i>
+            <small id="s">Error message</small>
+          </div>
+          <div class="form-set">
+            <label for="username" id="email-label">Email</label>
+            <input placeholder="Enter your Email"  id="email" type="email"/>
+            <i id="ss" class="fa-solid fa-circle-check"></i>
+            <i id="c" class="fa-solid fa-circle-exclamation"></i>
+            <small id="s">Error message</small>
+            </div>
+            <div class="form-set">
+            <label for="username" id="number-label">Age</label>
+            <input min="14" max="99" placeholder="Age" id="numbero" type="number"/>
+            <i id="ss" class="fa-solid fa-circle-check"></i>
+            <i id="c" class="fa-solid fa-circle-exclamation"></i>
+            <small id="s">Error message</small>
+            </div>
+            <div class="form-set">
             <label>Which option best describes your food preferences?</label>
         <select id="dropdown">
               <option value="">(select one)
@@ -29,26 +50,30 @@
                 <option value="5">All of the above
                 </option>
                 </select>
-          
-        
+                <i id="ss" class="fa-solid fa-circle-check"></i>
+                <i id="c" class="fa-solid fa-circle-exclamation"></i>
+                <small id="s">Error message</small>
+          </div>
 <label>Would you recommend our food to a friend?</label>
-
 <label><input class="inline" id="best" name="best-worst-medium" type="radio" checked value="best" >Yes.Best food.</label>
 <label><input class="inline" id="worst" name="best-worst-medium" type="radio" value="worst" >No.Worst food.</label>
 <label><input class="inline" id="medium" name="best-worst-medium" type="radio" value="medium" >Not sure.Medium food.</label>
-
-<label>What is your favorite way of eating the food?
-<select id="dropdown">
+          <div class="form-set">
+<label>What is your favorite way of eating the food?</label>
+<select id="dropdown2">
 <option value="">(select one)</option>
 <option value="6">With my hands</option>
 <option value="7">With knives and forks</option>
 <option value="8">At the restaurant</option>
 <option value="9">All of the above</option>
 </select>
-</label>
+<i id="ss" class="fa-solid fa-circle-check"></i>
+<i id="c" class="fa-solid fa-circle-exclamation"></i>
+<small id="s">Error message</small>
+</div>
 <label>What type of culinary dishes would you like to see in the future?</label>
 
-  <label><input class="inline" type="checkbox" name="culinary-dish" id="Pasta" value="Pasta"> Pasta</label>
+  <label><input class="inline" type="checkbox" name="culinary-dish" id="Pasta" value="Pasta" checked> Pasta</label>
   <label><input class="inline" type="checkbox" name="culinary-dish" id="Lasagna" value="Lasagna"> Lasagna</label>
   <label><input class="inline" type="checkbox" name="culinary-dish" id="Quesadilla" value="Quesadilla"> Quesadilla</label>
   <label><input class="inline" type="checkbox" name="culinary-dish" id="Soup" value="Soup"> Soup</label>
@@ -60,9 +85,14 @@
   <label><input class="inline" type="checkbox" name="culinary-dish" id="Bread" value="Bread"> Bread</label>
   <label><input class="inline" type="checkbox" name="culinary-dish" id="French-fries" value="French-fries"> French-fries</label>
   <label><label>Help us improve by writing your comments and suggestions!</label>
-  <textarea name="feedback" rows="10" cols="70" placeholder="I like spicy sauce..."></textarea>
-  </fieldset>
-<input type="submit" value="Submit" id="submit" />
+<div class="form-set">
+  <textarea id="area" name="feedback" rows="10" cols="70" placeholder="I like spicy sauce..."></textarea>
+  <i id="ss" class="fa-solid fa-circle-check"></i>
+  <i id="c" class="fa-solid fa-circle-exclamation"></i>
+  <small id="s">Error message</small>
+  </div>
+  <button id="submit">Submit</button>
 </form>
-      </body>
+  <script src="script.js"></script>
+  </body>
   </html>

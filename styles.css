@@ -1,3 +1,6 @@
+*{
+  box-sizing: border-box;
+}
 body{
     background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(https://b-iff.ro/wp-content/uploads/2021/04/Cum-sa-faceti-o-rezervare-la-restaurant.jpg) ;
     font-family: Tahoma;
@@ -13,21 +16,24 @@ body{
   h1, p{
     margin-top: 1em;
     text-align: center;
-    
-    
   }
   
-  fieldset {
+  #form {
     text-align: center;
     width: 400px;
     margin: auto;
     border: 0.6rem solid lightsalmon;
     background-color: rgba(65, 45, 10);
+    position: relative;
+    padding-bottom: 10px;
+    border-bottom:none;
+    padding: 10px;
   }
   label{
     display: block;
     margin: 0.5rem 0;
     text-align: left;
+    padding-bottom: 5px;
   }
   input{
     width: auto;
@@ -45,16 +51,71 @@ body{
     margin: 0 0.5em 0 0;
     vertical-align: middle;
   }
-  input[type="submit"] {
+  #submit {
     display: block;
-    width: 450px;
-    margin: 1em auto;
+    width: 362px;
+    margin: auto;
     height: 3em;
-    font-size: 1.3rem;
+    font-size: 1.9rem;
+    font-style: italic;
     background-color: rgba(65, 45, 10);
     min-width: 300px;
     font-family: Tahoma;
-    border: 0.7rem solid rgba(65, 45, 10);
+    border: 0.7rem solid lightsalmon;
     color: white;
+    border-width: 5px;
   }
-  
+ #ss, #c{
+    float: right;
+    visibility: hidden;
+ }
+ #s{
+  position: absolute;
+  right: 50px;
+  visibility: hidden;
+  font-size: 15px;
+ }
+.form-set.success input{
+  border-color: green;
+  border-width: 8px;
+}
+.form-set.success #ss{
+  visibility: visible;
+  color: green;
+}
+.form-set.error input{
+  border-color: darkred;
+  border-width: 8px;
+}
+.form-set.error #c{
+  visibility: visible;
+  color: red;
+}
+.form-set.error #s {
+  visibility: visible;
+  color: red;
+}
+.form-set.success #dropdown {
+  border-color: green;
+  border-width: 8px;
+}
+.form-set.error #dropdown{
+  border-color: darkred;
+  border-width: 8px;
+}
+.form-set.success #dropdown2 {
+  border-color: green;
+  border-width: 8px;
+}
+.form-set.error #dropdown2{
+  border-color: darkred;
+  border-width: 8px;
+}
+.form-set.error #area {
+  border-color: darkred;
+  border-width: 8px;
+}
+.form-set.success #area {
+  border-color: green;
+  border-width: 8px;
+}
